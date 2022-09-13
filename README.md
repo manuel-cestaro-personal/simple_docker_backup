@@ -8,14 +8,10 @@ Enter the following from a terminal prompt:
 `sudo crontab -e`
 
 Add the following entry to the end of the `crontab` file:
-<code>
-# m h dom mon dow   command
-0 0 * * * bash /usr/local/bin/backup.sh
-</code>
+> 0 0 * * * bash /usr/local/bin/backup.sh
+
 
 ## Restoring backup
 To restore all files in the archive enter the following:
-<code>
-cd /
-sudo tar -xzvf /mnt/backup/***file_name***.tgz
-</code>
+> cd /
+> sudo tar -xzvf /mnt/backup/***file_name***.tgz
