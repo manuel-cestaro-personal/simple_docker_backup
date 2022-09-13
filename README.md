@@ -14,4 +14,5 @@ Add the following entry to the end of the `crontab` file:
 ## Restoring backup
 To restore all files in the archive enter the following:
 > cd /
+>
 > sudo tar -xzvf /mnt/backup/***file_name***.tgz
