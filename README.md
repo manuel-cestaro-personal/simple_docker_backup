@@ -7,20 +7,18 @@ The simplest way of executing the above backup script is to copy and paste the c
 
 Then from a terminal prompt:
 >sudo ./backup.sh
-
-
-
+<br /><br />
 Use the cron utility to automate the script execution.
 Enter the following from a terminal prompt:
 
 > sudo crontab -e
 
 Add the following entry to the end of the `crontab` file:
+> \# m h dom mon dow   command<br />
 > 0 0 * * * bash /***your***/***path***/backup.sh
 
 
 ## Restoring backup
 To restore all files in the archive enter the following:
-> cd /
-
+> cd / <br />
 > sudo tar -xzvf /mnt/backup/***file_name***.tgz
