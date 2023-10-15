@@ -6,7 +6,7 @@
 ####################################
 
 # What to backup.
-backup_files="/home /var/spool/mail /etc /root /boot /opt /var/lib/docker/containers"
+backup_files="/home /var/spool/mail /etc /root /boot /opt /var/lib/docker/containers /docker"
 
 # Where to backup to.
 dest="/mnt/backup" # CHANGE YOUR DESTINATION PATH
